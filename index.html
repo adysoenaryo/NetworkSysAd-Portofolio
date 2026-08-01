@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ady Soenaryo- Network System Administrator Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="page-loader" id="pageLoader">
+  <div class="page-loader-spinner"></div>
+</div>
+
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar">
+
+  <div class="nav-left">
+    <span>Ady Soenaryo</span>
+  </div>
+
+
+  <div class="nav-right" id="navMenu">
+
+    <a href="index.html">Home</a>
+
+    <a href="about.html">About</a>
+
+    <a href="gallery.html">Gallery</a>
+
+    <a href="index.html#projects">Projects</a>
+
+    <a href="index.html#contact">Contact</a>
+
+    <button
+      class="toggle"
+      onclick="toggleTheme()"
+      aria-label="Toggle dark and light mode"
+    >
+      🌙
+    </button>
+
+  </div>
+
+
+  <!-- Mobile Menu Button -->
+
+  <button
+    class="menu-toggle"
+    onclick="toggleMenu()"
+    aria-label="Open navigation menu"
+  >
+    ☰
+  </button>
+
+</nav>
+  <div class="container">
+    <!-- ================= HERO / HOME ================= -->
+    <section class="hero fade" id="home">
+
+      <div class="hero-text">
+
+        <h1>
+          Hi, I'm <span>Ady Soenaryo</span>
+        </h1>
+
+        <h3>
+          Network System Administrator
+        </h3>
+
+        <p>
+          Student in SMK Telkom Sidoarjo | Network System Administrator | IT Enthusiast | Passionate about building secure, stable, and reliable network infrastructure.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            View Projects
+          </a>
+
+          <a href="#contact" class="btn btn-outline">
+            Contact Me
+          </a>
+        </div>
+
+      </div>
+
+
+      <!-- Glass Photo -->
+      <div class="photo-card">
+        <img
+          src="Profile ady.jpg"
+          alt="Ady Soenaryo Profile Photo"
+        >
+      </div>
+
+    </section>
+
+<!-- ================= EXPERIENCE PAGE ================= -->
+<section class="experience-page">
+
+  <!-- Header Rata Kiri -->
+  <div class="experience-header fade-in">
+    <span class="section-number"></span>
+    <h1>Experience</h1>
+    <p>My professional journey and practical experience in network system administration.</p>
+  </div>
+
+  <!-- Timeline List -->
+  <div class="experience-list">
+
+    <!-- Item Experience 1 -->
+    <div class="exp-item fade-in" style="--delay: 0.2s;">
+      <div class="exp-number">1</div>
+      
+      <div class="exp-card">
+        <div class="exp-card-header">
+          <h2 class="company-name">PT Mulia Maniti Sejahtera - IndonesiaCCTV</h2>
+          <span class="exp-badge">April 2026 </span>
+        </div>
+
+        <h3 class="role-title">IT Support</h3>
+
+        <p class="exp-description">
+          troubleshooting CCTV, LAN, NVR, and DVR systems, ensuring smooth operation and resolving technical issues efficiently.
+        </p>
+
+        <div class="exp-tags">
+          <span>CCTV</span>
+          <span>Troubleshooting</span>
+          <span>NVR</span>
+          <span>DVR</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item Experience 2 -->
+    <div class="exp-item fade-in" style="--delay: 0.4s;">
+      <div class="exp-number">2</div>
+      
+      <div class="exp-card">
+        <div class="exp-card-header">
+          <h2 class="company-name">SMK Telkom Sidoarjo</h2>
+          <span class="exp-badge">2024 – 2027</span>
+        </div>
+
+        <h3 class="role-title">Network & System Admin Student</h3>
+
+        <p class="exp-description">
+          Hands-on practical experience configuring MikroTik, Ruijie networking devices, CCTV setup, and local network cabling infrastructure.
+        </p>
+
+        <div class="exp-tags">
+          <span>MikroTik</span>
+          <span>Ruijie</span>
+          <span>CCTV</span>
+          <span>LAN Cabling</span>
+        </div>
+      </div>
+    </div>
+
+   <!-- Item Experience 3 -->
+    <div class="exp-item fade-in" style="--delay: 0.4s;">
+      <div class="exp-number">3</div>
+      
+      <div class="exp-card">
+        <div class="exp-card-header">
+          <h2 class="company-name">Lomba Kompetensi Siswa - IT Network System Administrator </h2>
+          <span class="exp-badge">February 2026</span>
+        </div>
+
+        <h3 class="role-title">IT Network System Administrator</h3>
+
+        <p class="exp-description">
+          Created topology competition of network and system administration in Lomba Kompetensi Siswa (LKS) 2026, showcasing skills in network configuration, troubleshooting, and system management.
+        </p>
+
+        <div class="exp-tags">
+          <span>MikroTik</span>
+          <span>Proxmox</span>
+          <span>Debian</span>
+          <span>Windows Server</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects" class="fade">
+
+      <h2>Projects</h2>
+
+      <div class="cards">
+
+        <!-- Project 1 -->
+        <div class="card">
+
+          <img
+            src="Network Instalation.jpg"
+            alt="Network Setup Project"
+            onclick="openLightbox(0)"
+            style="cursor: pointer;"
+          >
+
+          <h3>
+            Network Setup
+          </h3>
+
+          <p>
+            Configured and managed a school network system
+            including basic network infrastructure and connectivity.
+          </p>
+
+          <div class="tags">
+            <span>MikroTik</span>
+            <span>Networking</span>
+          </div>
+
+        </div>
+
+
+        <!-- Project 2 -->
+        <div class="card">
+
+          <img
+            src="CCTV Instalation.jpg"
+            alt="CCTV Installation Project"
+            onclick="openLightbox(1)"
+            style="cursor: pointer;"
+          >
+
+          <h3>
+            CCTV Installation
+          </h3>
+
+          <p>
+            Configured and installed CCTV systems for monitoring
+            and security purposes.
+          </p>
+
+          <div class="tags">
+            <span>CCTV</span>
+            <span>Networking</span>
+          </div>
+
+        </div>
+
+
+        <!-- Project 3 -->
+        <div class="card">
+
+          <img
+            src="Server.png"
+            alt="Server"
+            onclick="openLightbox(2)"
+            style="cursor: pointer;"
+          >
+
+          <h3>
+            Server Monitoring 
+          </h3>
+
+          <p>
+            Monitoring Windows Server & Mikrotik With Zabbix 
+          </p>
+
+          <div class="tags">
+            <span>Server</span>
+            <span>Monitoring</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= TOOLS / SOFTWARE ================= -->
+    <section class="tools-section fade">
+
+      <h2>Tools &amp; Software</h2>
+
+      <div class="marquee">
+
+        <div class="marquee-track">
+
+          <!-- Set 1 -->
+          <div class="tool-badge"><img class="tool-logo" src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/mikrotik.svg" alt="MikroTik" onerror="this.style.display='none'"> MikroTik</div>
+          <div class="tool-badge"><img class="tool-logo" src="ruijie.jpeg" alt="Ruijie" onerror="this.style.display='none'"> Ruijie</div>
+          <div class="tool-badge"><img class="tool-logo" src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/proxmox.svg" alt="Proxmox" onerror="this.style.display='none'"> Proxmox</div>
+          <div class="tool-badge"><img class="tool-logo" src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/linux.svg" alt="Linux" onerror="this.style.display='none'"> Linux</div>
+          <div class="tool-badge"><img class="tool-logo" src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/zabbix.svg" alt="Zabbix" onerror="this.style.display='none'"> Zabbix</div>
+          <div class="tool-badge"><img class="tool-logo" src="windows11.png" alt="Windows Server" onerror="this.style.display='none'"> Windows Server</div>
+          <div class="tool-badge"><img class="tool-logo" src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/cisco.svg" alt="Cisco" onerror="this.style.display='none'"> Cisco</div>
+
+          <!-- Set 2 (duplikat, biar animasinya nyambung mulus tanpa putus) -->
+          <div class="tool-badge" aria-hidden="true"><img class="tool-logo" src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/mikrotik.svg" alt="" onerror="this.style.display='none'"> MikroTik</div>
+          <div class="tool-badge" aria-hidden="true"><img class="tool-logo" src="ruijie.jpeg" alt="" onerror="this.style.display='none'"> Ruijie</div>
+          <div class="tool-badge" aria-hidden="true"><img class="tool-logo" src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/proxmox.svg" alt="" onerror="this.style.display='none'"> Proxmox</div>
+          <div class="tool-badge" aria-hidden="true"><img class="tool-logo" src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/linux.svg" alt="" onerror="this.style.display='none'"> Linux</div>
+          <div class="tool-badge" aria-hidden="true"><img class="tool-logo" src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/zabbix.svg" alt="" onerror="this.style.display='none'"> Zabbix</div>
+          <div class="tool-badge" aria-hidden="true"><img class="tool-logo" src="windows11.png" alt="" onerror="this.style.display='none'"> Windows Server</div>
+          <div class="tool-badge" aria-hidden="true"><img class="tool-logo" src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/cisco.svg" alt="" onerror="this.style.display='none'"> Cisco</div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+ <!-- ================= CONTACT ================= -->
+<section id="contact" class="fade">
+
+  <h2>Let's Connect</h2>
+
+  <p>
+    Feel free to reach out to me through email or connect
+    with me on my social media platforms.
+  </p>
+
+  <div class="contact-links">
+
+    <!-- Email -->
+    <a
+      href="mailto:adysoenaryo@gmail.com"
+      class="social-link"
+      aria-label="Email"
+    >
+      <span class="social-icon">✉</span>
+      <span>Email</span>
+    </a>
+
+
+    <!-- LinkedIn -->
+    <a
+      href="https://www.linkedin.com/in/adysoenaryo"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="social-link"
+      aria-label="LinkedIn"
+    >
+      <span class="social-icon">in</span>
+      <span>LinkedIn</span>
+    </a>
+
+
+    <!-- Instagram -->
+    <a
+      href="https://www.instagram.com/yooxszz_"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="social-link"
+      aria-label="Instagram"
+    >
+      <span class="social-icon">◎</span>
+      <span>Instagram</span>
+    </a>
+
+
+    <!-- YouTube -->
+    <a
+      href="https://www.youtube.com/@adysoenaryo16"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="social-link"
+      aria-label="YouTube"
+    >
+      <span class="social-icon">▶</span>
+      <span>YouTube</span>
+    </a>
+
+
+    <!-- GitHub -->
+    <a
+      href="https://github.com/adysoenaryo"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="social-link"
+      aria-label="GitHub"
+    >
+      <span class="social-icon">GH</span>
+      <span>GitHub</span>
+    </a>
+
+  </div>
+
+</section>
+
+
+  </div>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+
+      <div class="footer-inner">
+
+        <div class="footer-brand">
+          <h3>Ady Soenaryo</h3>
+          <p>
+            Network System Administrator focused on building
+            secure, stable, and reliable network infrastructure.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="index.html#projects">Projects</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="mailto:adysoenaryo@gmail.com">adysoenaryo@gmail.com</a>
+          <!-- Ganti nomor di bawah ini sama nomor HP kamu -->
+          <a href="tel:+6281234567890">+62 812-3456-7890</a>
+          <span>Sidoarjo, East Java, Indonesia</span>
+        </div>
+
+        <div class="footer-col">
+          <h4>Follow Me</h4>
+          <div class="footer-socials">
+            <a href="https://www.linkedin.com/in/adysoenaryo" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+            <a href="https://www.instagram.com/yooxszz_" target="_blank" rel="noopener noreferrer" aria-label="Instagram">◎</a>
+            <a href="https://www.youtube.com/@adysoenaryo16" target="_blank" rel="noopener noreferrer" aria-label="YouTube">▶</a>
+            <a href="https://github.com/adysoenaryo" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GH</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Ady Soenaryo. All rights reserved.</p>
+      </div>
+
+    </footer>
+
+
+  <!-- ================= LIGHTBOX ================= -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close">&times;</button>
+    <button class="lightbox-prev" onclick="changeLightboxImage(-1)" aria-label="Previous image">&#10094;</button>
+
+    <div class="lightbox-content">
+      <img src="" alt="" id="lightbox-img">
+      <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
+
+    <button class="lightbox-next" onclick="changeLightboxImage(1)" aria-label="Next image">&#10095;</button>
+  </div>
+
+
+<script src="script.js"></script>
+
+<script>
+  // Navbar: transparan di atas, dapet background pas discroll
+  (function () {
+    const navbar = document.querySelector('.navbar');
+
+    function handleNavScroll() {
+      if (window.scrollY > 40) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    }
+
+    window.addEventListener('scroll', handleNavScroll);
+    handleNavScroll();
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Gallery - Ady Soenaryo</title>
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<div class="page-loader" id="pageLoader">
+  <div class="page-loader-spinner"></div>
+</div>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav>
+
+        <div class="nav-left">
+
+            <span>
+                Ady Soenaryo
+            </span>
+
+        </div>
+
+
+        <div class="nav-right">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="gallery.html">
+                Gallery
+            </a>
+
+            <a href="index.html#projects">
+                Projects
+            </a>
+
+            <a href="index.html#contact">
+                Contact
+            </a>
+
+
+            <!-- Dark / Light Mode -->
+
+            <button
+                class="toggle"
+                onclick="toggleTheme()"
+                aria-label="Toggle dark and light mode"
+            >
+                🌙
+            </button>
+        </div>
+             <!-- MOBILE MENU BUTTON -->
+
+  <button
+    class="menu-toggle"
+    onclick="toggleMenu()"
+    aria-label="Open navigation menu"
+    aria-expanded="false"
+  >
+
+    <span></span>
+    <span></span>
+    <span></span>
+
+  </button>
+    </nav>
+
+
+    <div class="container">
+
+
+        <!-- ================= GALLERY ================= -->
+
+        <section class="gallery-section">
+
+
+            <!-- Gallery Header -->
+
+            <div class="gallery-header">
+
+                <span class="section-number">
+                    // 02
+                </span>
+
+                <h1>
+                    Gallery
+                </h1>
+
+            </div>
+
+
+
+            <!-- ================= CATEGORY BUTTON ================= -->
+
+            <div class="gallery-tabs">
+
+
+                <!-- Sertifikat -->
+
+                <button
+                    class="gallery-tab active"
+                    onclick="showGallery('certificates', this)"
+                >
+                    SERTIFIKAT
+                </button>
+
+
+                <!-- Aktivitas -->
+
+                <button
+                    class="gallery-tab"
+                    onclick="showGallery('activities', this)"
+                >
+                    AKTIVITAS
+                </button>
+
+            </div>
+
+
+
+            <!-- ================================================= -->
+            <!-- SERTIFIKAT -->
+            <!-- ================================================= -->
+
+            <div
+                id="certificates"
+                class="gallery-grid gallery-content active"
+            >
+
+
+                <!-- Certificate 1 -->
+
+                <div class="gallery-item">
+
+                    <img
+                        src="certificate/Sertifikat LKS.jpg"
+                        alt="Certificate LKS-ITNSA 2026"
+                        onclick="openGalleryLightbox('certificates', 0)"
+                    >
+
+                </div>
+
+
+                <!-- Certificate 2 -->
+
+                <div class="gallery-item">
+
+                    <img
+                        src="certificate/Mikrotik-Dasar-Sertifikat-Mikrotik-Dasar-LMS-ID-Networkers_page-0001.jpg"
+                        alt="Certificate Mikrotik Dasar - by ID Networkers"
+                        onclick="openGalleryLightbox('certificates', 1)"
+                    >
+
+                </div>
+
+
+                <!-- Certificate 3 -->
+
+                <div class="gallery-item">
+
+                    <img
+                        src="certificate/Atswa Nesa Certificate.jpg"
+                        alt="Certificate Network Administration - by Atswa Nesa 2025"
+                        onclick="openGalleryLightbox('certificates', 2)"
+                    >
+
+                </div>
+
+
+                <!-- Certificate 4 -->
+
+                <div class="gallery-item">
+
+                    <img
+                        src="certificate/Certificate-ISC.jpg"
+                        alt="Certificate workshop public speaking - International Speech Competition"
+                        onclick="openGalleryLightbox('certificates', 3)"
+                    >
+
+                </div>
+
+
+                <!-- Certificate 5 -->
+
+                <div class="gallery-item">
+
+                    <img
+                        src="certificate/DigiupCertificate.png"
+                        alt="Certificate - Digiup 2025 by TelkomDigiup"
+                        onclick="openGalleryLightbox('certificates', 4)"
+                    >
+
+                </div>
+
+
+                <!-- Certificate 6 -->
+
+                <div class="gallery-item">
+
+                    <img
+                        src="certificate/Sertifikat Elevate.jpg"
+                        alt="Certificate - Microsoft Azure Fundamentals by Elevate"
+                        onclick="openGalleryLightbox('certificates', 5)"
+                    >
+
+                </div>
+
+                <!-- Certificate 7 -->
+
+                <div class="gallery-item">
+
+                    <img
+                        src="certificate/Ady Soenaryo-Essay Pena.jpg"
+                        alt="Certificate - Essay Writing Competition by Pena UNESA"
+                        onclick="openGalleryLightbox('certificates', 6)"
+                    >
+
+                </div>
+
+                <!-- Certificate 8-->
+
+                <div class="gallery-item">
+
+                    <img
+                        src="certificate/certificate (2).png"
+                        alt="Certificate - Ansible Automation by Adinusa"
+                        onclick="openGalleryLightbox('certificates', 7)"
+                    >
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ================================================= -->
+            <!-- AKTIVITAS -->
+            <!-- ================================================= -->
+
+            <div
+                id="activities"
+                class="gallery-grid gallery-content"
+            >
+
+
+                <!-- Activity 1 -->
+
+                <div class="gallery-item">
+
+                    <img
+                        src="activity/NetworkTroubleshooting.jpg"
+                        alt="Network Activity"
+                        onclick="openGalleryLightbox('activities', 0)"
+                    >
+
+                </div>
+
+
+                <!-- Activity 2 -->
+
+                <div class="gallery-item">
+
+                    <img
+                        src="activity/Mikrotik Konfigurations.jpg"
+                        alt="MikroTik Configuration"
+                        onclick="openGalleryLightbox('activities', 1)"
+                    >
+
+                </div>
+
+
+                <!-- Activity 3 -->
+
+                <div class="gallery-item">
+
+                    <img
+                        src="activity/NetworkTroubleshoots.jpg"
+                        alt="Troubleshooting LAN Cable"
+                        onclick="openGalleryLightbox('activities', 2)"
+                    >
+
+                </div>
+
+
+                <!-- Activity 4 -->
+
+                <div class="gallery-item">
+
+                    <img
+                        src="activity/Proxmox Install.jpg"
+                        alt="Proxmox Installation"
+                        onclick="openGalleryLightbox('activities', 3)"
+                    >
+
+                </div>
+                <!-- Activity 5 -->
+
+                <div class="gallery-item">
+
+                    <img
+                        src="activity/cctvtroubleshooting.jpg"
+                        alt="CCTV Troubleshooting"
+                        onclick="openGalleryLightbox('activities', 4)"
+                    >
+
+                </div>
+
+                <!-- Activity 6 -->
+
+                <div class="gallery-item">
+
+                    <img
+                        src="activity/Diestnatalis Expo.jpg"
+                        alt="Diestnatalis Expo - Digital Talent Program by SMK TELKOM SIDOARJO"
+                        onclick="openGalleryLightbox('activities', 5)"
+                    >
+
+                </div>
+
+                <!-- Activity 7 -->
+
+                <div class="gallery-item">
+
+                    <img
+                        src="activity/Ruijie Installation Accesspoint.jpg"
+                        alt="Installation Access Point Ruijie"
+                        onclick="openGalleryLightbox('activities', 6)"
+                    >
+
+                </div>
+
+                 <!-- Activity 8 -->
+
+                <div class="gallery-item">
+
+                    <img
+                        src="activity/Rujie Accesspoint  Instalation.jpg"
+                        alt="Installation Access Point Ruijie"
+                        onclick="openGalleryLightbox('activities', 7)"
+                    >
+
+                </div>
+
+
+
+            </div>
+
+
+        </section>
+
+
+
+    </div>
+
+
+        <!-- ================= FOOTER ================= -->
+
+        <footer class="site-footer">
+
+            <div class="footer-inner">
+
+                <div class="footer-brand">
+                    <h3>Ady Soenaryo</h3>
+                    <p>
+                        Network System Administrator focused on building
+                        secure, stable, and reliable network infrastructure.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="index.html#projects">Projects</a>
+                    <a href="index.html#contact">Contact</a>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <a href="mailto:adysoenaryo@gmail.com">adysoenaryo@gmail.com</a>
+                    <!-- Ganti nomor di bawah ini sama nomor HP kamu -->
+                    <a href="tel:+6285143898431">+62 851-4389-8431</a>
+                    <span>Sidoarjo, East Java, Indonesia</span>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Follow Me</h4>
+                    <div class="footer-socials">
+                        <a href="https://www.linkedin.com/in/adysoenaryo" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+                        <a href="https://www.instagram.com/yooxszz_" target="_blank" rel="noopener noreferrer" aria-label="Instagram">◎</a>
+                        <a href="https://www.youtube.com/@adysoenaryo16" target="_blank" rel="noopener noreferrer" aria-label="YouTube">▶</a>
+                        <a href="https://github.com/adysoenaryo" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GH</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Ady Soenaryo. All rights reserved.</p>
+            </div>
+
+        </footer>
+
+
+    <!-- ================= GALLERY LIGHTBOX ================= -->
+    <!-- Ditaruh di LUAR .container biar gak kena transform page-transition -->
+
+    <div class="lightbox" id="galleryLightbox">
+        <button class="lightbox-close" onclick="closeGalleryLightbox()" aria-label="Close">&times;</button>
+        <button class="lightbox-prev" onclick="changeGalleryLightbox(-1)" aria-label="Previous image">&#10094;</button>
+
+        <div class="lightbox-content">
+            <img src="" alt="" id="galleryLightboxImg">
+            <p class="lightbox-caption" id="galleryLightboxCaption"></p>
+        </div>
+
+        <button class="lightbox-next" onclick="changeGalleryLightbox(1)" aria-label="Next image">&#10095;</button>
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- JAVASCRIPT -->
+    <!-- ================================================= -->
+
+    <script>
+
+
+        /* ================================================
+           GALLERY SWITCH
+        ================================================ */
+
+        function showGallery(category, button) {
+
+
+            // Ambil semua konten gallery
+
+            const galleries =
+                document.querySelectorAll(
+                    ".gallery-content"
+                );
+
+
+            // Sembunyikan semua gallery
+
+            galleries.forEach(
+                function(gallery) {
+
+                    gallery.classList.remove(
+                        "active"
+                    );
+
+                }
+            );
+
+
+
+            // Ambil semua tombol kategori
+
+            const buttons =
+                document.querySelectorAll(
+                    ".gallery-tab"
+                );
+
+
+            // Hapus active dari semua tombol
+
+            buttons.forEach(
+                function(btn) {
+
+                    btn.classList.remove(
+                        "active"
+                    );
+
+                }
+            );
+
+
+
+            // Tampilkan gallery yang dipilih
+
+            const selectedGallery =
+                document.getElementById(
+                    category
+                );
+
+
+            selectedGallery.classList.add(
+                "active"
+            );
+
+
+
+            // Aktifkan tombol yang diklik
+
+            button.classList.add(
+                "active"
+            );
+
+        }
+
+
+
+        /* ================================================
+           DARK / LIGHT MODE
+        ================================================ */
+
+        function toggleTheme() {
+
+
+            // Tambahkan / hapus class light
+
+            document.body.classList.toggle(
+                "light"
+            );
+
+
+            // Cek apakah sekarang light mode
+
+            const isLight =
+                document.body.classList.contains(
+                    "light"
+                );
+
+
+            // Simpan pilihan user
+
+            localStorage.setItem(
+                "theme",
+                isLight
+                    ? "light"
+                    : "dark"
+            );
+
+        }
+
+
+
+        /* ================================================
+           LOAD SAVED THEME
+        ================================================ */
+
+        if (
+            localStorage.getItem(
+                "theme"
+            ) === "light"
+        ) {
+
+            document.body.classList.add(
+                "light"
+            );
+
+        }
+
+
+
+        /* ================================================
+           MOBILE NAVBAR
+        ================================================ */
+
+        function toggleMenu() {
+
+
+            const navRight =
+                document.querySelector(
+                    ".nav-right"
+                );
+
+
+            navRight.classList.toggle(
+                "menu-open"
+            );
+
+        }
+
+
+
+        /* ================================================
+           GALLERY LIGHTBOX
+           (klik gambar sertifikat/aktivitas -> muncul popup,
+           bisa digeser next/prev dalam kategori yang sama)
+        ================================================ */
+
+        let currentGalleryCategory = "certificates";
+        let currentGalleryIndex = 0;
+
+        function getGalleryImages(category) {
+
+            const container =
+                document.getElementById(category);
+
+            return container.querySelectorAll(
+                ".gallery-item img"
+            );
+
+        }
+
+        function updateGalleryLightbox() {
+
+            const imgs =
+                getGalleryImages(currentGalleryCategory);
+
+            const activeImg =
+                imgs[currentGalleryIndex];
+
+            const lightboxImg =
+                document.getElementById("galleryLightboxImg");
+
+            const lightboxCaption =
+                document.getElementById("galleryLightboxCaption");
+
+            lightboxImg.src = activeImg.src;
+            lightboxImg.alt = activeImg.alt;
+            lightboxCaption.textContent = activeImg.alt;
+
+        }
+
+        function openGalleryLightbox(category, index) {
+
+            currentGalleryCategory = category;
+            currentGalleryIndex = index;
+
+            updateGalleryLightbox();
+
+            const lightbox =
+                document.getElementById("galleryLightbox");
+
+            lightbox.classList.add("active");
+            document.body.style.overflow = "hidden";
+
+        }
+
+        function closeGalleryLightbox() {
+
+            const lightbox =
+                document.getElementById("galleryLightbox");
+
+            lightbox.classList.remove("active");
+            document.body.style.overflow = "";
+
+        }
+
+        function changeGalleryLightbox(direction) {
+
+            const imgs =
+                getGalleryImages(currentGalleryCategory);
+
+            currentGalleryIndex =
+                (currentGalleryIndex + direction + imgs.length) % imgs.length;
+
+            updateGalleryLightbox();
+
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+
+            const lightbox =
+                document.getElementById("galleryLightbox");
+
+            if (!lightbox) return;
+
+            // Klik area gelap di luar gambar buat nutup
+
+            lightbox.addEventListener("click", (e) => {
+                if (e.target === lightbox) closeGalleryLightbox();
+            });
+
+
+            // Keyboard: Escape nutup, panah kiri/kanan geser
+
+            document.addEventListener("keydown", (e) => {
+
+                if (!lightbox.classList.contains("active")) return;
+
+                if (e.key === "Escape") closeGalleryLightbox();
+                if (e.key === "ArrowRight") changeGalleryLightbox(1);
+                if (e.key === "ArrowLeft") changeGalleryLightbox(-1);
+
+            });
+
+
+            // Swipe di HP: geser kiri/kanan buat pindah gambar
+
+            let touchStartX = 0;
+
+            lightbox.addEventListener("touchstart", (e) => {
+                touchStartX = e.changedTouches[0].screenX;
+            });
+
+            lightbox.addEventListener("touchend", (e) => {
+
+                const touchEndX = e.changedTouches[0].screenX;
+                const diff = touchEndX - touchStartX;
+
+                if (Math.abs(diff) > 50) {
+                    changeGalleryLightbox(diff > 0 ? -1 : 1);
+                }
+
+            });
+
+        });
+
+
+    </script>
+
+<script src="script.js"></script>
+
+<script>
+  // Navbar: transparan di atas, dapet background pas discroll (sama kayak Home & About)
+  (function () {
+    const navbar = document.querySelector('nav');
+
+    function handleNavScroll() {
+      if (window.scrollY > 40) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    }
+
+    window.addEventListener('scroll', handleNavScroll);
+    handleNavScroll();
+  })();
+</script>
+
+</body>
+
+</html>

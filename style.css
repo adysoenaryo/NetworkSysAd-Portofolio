@@ -2513,3 +2513,40 @@ section p {
     font-size: 13px;
   }
 }
+
+/* =====================================================
+   TERMINAL BRAND (navbar) — Ubuntu Mono + blinking cursor
+===================================================== */
+
+.terminal-brand {
+  font-family: 'Ubuntu Mono', monospace;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  color: var(--text);
+}
+
+.blink-cursor {
+  display: inline-block;
+  animation: blink-cursor-anim 1s steps(1) infinite;
+  color: var(--accent);
+}
+
+/* Pas lagi ngetik, cursor solid dulu (gak kedip) */
+.blink-cursor.typing {
+  animation: none;
+  opacity: 1;
+}
+
+@keyframes blink-cursor-anim {
+  0%, 50% {
+    opacity: 1;
+  }
+  50.01%, 100% {
+    opacity: 0;
+  }
+}
+
+.terminal-brand .typed-text {
+    font-family: 'Ubuntu Mono', monospace;
+}

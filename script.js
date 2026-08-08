@@ -416,3 +416,69 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+
+// =====================================================
+// TERMINAL BRAND — efek ngetik sendiri (typing animation)
+// Jalan pas halaman kebuka, dan replay pas balik ke tab ini
+// =====================================================
+
+function playTerminalTypingEffect() {
+
+    const brand =
+        document.querySelector(".terminal-brand");
+
+    if (!brand) return;
+
+    const typedText =
+        brand.querySelector(".typed-text");
+
+    const cursor =
+        brand.querySelector(".blink-cursor");
+
+    if (!typedText || !cursor) return;
+
+    const fullText =
+        brand.getAttribute("data-text") || "/home/ady";
+
+    let i = 0;
+
+    typedText.textContent = "";
+    cursor.classList.add("typing");
+
+    function typeNextChar() {
+
+        if (i <= fullText.length) {
+
+            typedText.textContent =
+                fullText.slice(0, i);
+
+            i++;
+
+            setTimeout(typeNextChar, 90);
+
+        } else {
+
+            cursor.classList.remove("typing");
+
+        }
+
+    }
+
+    typeNextChar();
+
+}
+
+document.addEventListener(
+    "DOMContentLoaded",
+    playTerminalTypingEffect
+);
+
+document.addEventListener("visibilitychange", () => {
+
+    if (document.visibilityState === "visible") {
+
+        playTerminalTypingEffect();
+
+    }
+
+});
